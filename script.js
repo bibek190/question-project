@@ -1,7 +1,7 @@
 const btns = document.querySelectorAll(".question-btn");
 
 btns.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    console.log(e.currentTarget);
+  btn.addEventListener("click", () => {
+    btn.parentElement.parentElement.classList.toggle("show-text");
   });
 });
